@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN/UP</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+    <section id="first">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html"> <img src="Resources/logo.png" alt="logo" width="120"></a>
+            </div>
+            <div id="navbar">
+                <a href="#"> HOME  </a>
+                <a href="#Aboutus"> ABOUT US </a>
+                <a href="#contact"> CONTACT US</a>
+
+                </dsiv>
+
+            </div>
+        </div>
+    </section>
+
+    <label>
+        <input type="checkbox" name="4" id="" hidden>
+        <div class="flip-card">
+            <div class="front">
+                <img src="Resources/login.png" alt="Sign up" width ="350px" height = "250px">
+               <h1 id="title"> Sign-Up</h1>
+                <form action="home.html" id ="forms">
+                 
+                    First-Name <input type = "text" required placeholder =  "Firstname" id="inputs"> <br><br>
+                   
+                    Last-Name <input type = "text" placeholder =  "Lastname" id="inputs"> <br><br>
+               
+                    Email &emsp;&emsp; <input type = email required placeholder =  "abc123@gmail.com"id="inputs"> <br><br>
+                 
+                    Birth date <input type = date  id="inputs"><br> <br>
+                 
+                   &emsp; Male <input type = "radio" name ="Gender" value= "male"> &emsp;&emsp;&emsp;&emsp;
+                    Female <input type = "radio" name ="Gender" value= "female"> <br><br>
+                 
+                    Create a Password <input type= Password required placeholder= "more than 6 figures" minlength= "6" id="inputs">
+                 <br>  <br> Confirm your Password <input type= Password required placeholder= "more than 6 figures" minlength= "6" id="inputs">
+                   <br> <br>     <input type="submit" value="Sign-Up" id="signup">  <br> <br>
+              
+                   <p class="click" >     Already have an account? <br>Click to <u>Log in!</u></p>
+                  </form>
+                    
+                     <!-- <form>  -->
+                     <p class="click" > </p>
+                    </form>
+                  <br><br>
+            </div>
+            <div class="back">
+                <img src="Resources/login.png" alt="LOGIN" width ="350px" height = "250px">
+                <h1 id="title"> Log in</h1>
+        <form action="questionnaire.html"> 
+         
+            User-Name <input type = text required placeholder =  "firstname" id="inputs"> <br><br>
+            Password <input type= Password required placeholder= "more than 6 figures" minlength= "6" id="inputs"> <br> <br>
+            <a href ="forgot password.html">forgot password !</a>
+                <br><br><input type="submit" value="Login" id="signup"> <br> 
+            <p>You dont have an account?  </p>
+            <p class="click" >Click to flip back and <u>Sign up</u></p>
+            </div>
+        </div>
+    </label>
+
+</body>
+
+</html>
