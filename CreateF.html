@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form generator</title>
+    <link rel="stylesheet" href="Create.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section id="first">
+        <div id="header">
+            <div id="logo">
+                <a href="#"> <img src="Resources/logo.png" alt="logo" width="120"></a>
+            </div>
+            <div id="navbar">
+                <a href="feed.html"> HOME  </a>
+                <a href="sign in up.html"> SIGN IN</a>
+
+
+            </div>
+        </div>
+        </div>
+
+        <div id="box">
+
+            <center>
+                <h1> Form Generator</h1>
+            </center>
+
+
+            <div id="body">
+
+                <script src="temp.js"></script>
+
+                <input id="question" type="text" placeholder="Enter Question here" class="inputs">
+                <br> <button id="enter" onclick="choiceGenerator()">Generate Choice</button>
+                <div id="output"></div>
+                <button onclick=inputGenerator() class="bs">Generate Blankspace</button>
+                <ol id="questions"></ol>
+                <button id="finishUpload" onclick="store()" class="bss">Finish</button> <br> <br>
+                <button id="survey-dispalay" onclick="displaySurvey()" class="two">Display</button>
+                <div id="displayArea"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p> Copyright © AASTU SEng 2021, All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
