@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <h2 class="logo">
+                <a href="#"> M-survey</a>
+            </h2>
+            <div class="subcontainer">
+                <div class="search-bar">
+                    <i class="uil uil-search-alt"></i>
+                    <input type="search" placeholder="Search">
+                </div>
+
+                <div class="create">
+                    <label class="btn btn-primary" for="Create-post"> <a href="create.html">Create + </a></label>
+                    <div class="profilepicture">
+                        <img src="images/pic.jpg" alt="profile" width=90px>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Left -->
+            <div class="left">
+               <div class="leftbox">
+                <a href="#" class="profile">
+                    <div class="profilepicture">
+                        <img src="images/pic.jpg" alt="profile">
+                    </div>
+
+                    <div class="handle">
+                        <h4>Keti Yohannes</h4>
+                        <p class="text-muted">@KJ_Script </p>
+                        <div id="sideBySide">
+                            <img src="Resources/coin.png" width="50px">
+                            <p style="margin-left: 180px; font-size: 19px; text-decoration: none;"> 9,999 M-coins</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+                <!-- sidebar -->
+
+                <div class="sidebar">
+                    <a href="feed.html" class="menuitem">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a href="change password.html" class="menuitem">
+                        <span><i class="uil uil-user"></i></span>
+                        <h3>Account Settings</h3>
+                    </a>
+
+
+                    <a href="#" class="menuitem active">
+                        <span><i class="uil uil-shopping-cart-alt"></i></span>
+                        <h3>Market Place</h3>
+                    </a>
+
+                    <a href="FAQ.html" class="menuitem">
+                        <span><i class="uil uil-info"></i></span>
+                        <h3>FAQ</h3>
+                    </a>
+
+                </div>
+                <!-- sidebar ends -->
+                <form action="create.html">
+                    <label for="create-post" class="btn btn-primary"><a href="create.html">Create + </a> </label>
+                </form>
+            </div>
+
+
+            <div class="middle">
+                <p class="market"> <img src="Resources/icon.png" width="60px" height="90px"> &nbsp; Marketplace
+                </p>
+
+                <div class="survey">
+                    <div id="s1">
+                        <img src="Resources/s1.png"> &nbsp &nbsp &nbsp &nbsp
+                        <h2> Amazon gift card</h2>
+                        <p> Redeemable </p>
+                        <button class="btnX" onclick="prompt(1)"> Claim</button>
+                    </div>
+                    <div id="s1">
+                        <img src="Resources/s2.png" width="220px"> &nbsp &nbsp &nbsp &nbsp
+                        <h2> Walmart gift card</h2>
+                        <p> Redeemable </p>
+                        <button class="btnX" onclick="prompt(2)"> Claim</button>
+                    </div>
+                    <div id="s1">
+                        <img src="Resources/s4.png" width="220px"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <h2> Target gift card</h2>
+                        <p> Redeemable </p>
+                        <button class="btnX" onclick="prompt(3)"> Claim</button>
+
+                    </div>
+                    <div id="s1">
+                        <img src="Resources/s3.png" width="220px"> &nbsp &nbsp &nbsp &nbsp
+                        <h2> Amazon gift card</h2>
+                        <p> Redeemable </p>
+                        <button class="btnX" onclick="prompt(4)"> Claim</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div id="couple">
+                    <marquee>
+                        <img src="Resources/AD.jpg" width="220px">
+                        <img src="Resources/AD.jpg" width="220px">
+                    </marquee>
+                </div> <br>
+                <div id="couple">
+                    <marquee direction="right">
+                        <img src="Resources/AD.jpg" width="220px">
+                        <img src="Resources/AD.jpg" width="220px">
+                    </marquee>
+                </div> <br>
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>
+        function prompt(index) {
+            alert("Gift card claimed!!!");
+            let a = document.getElementsByClassName("btnX");
+            console.log(a[index]);
+            a[index - 1].innerHTML = "Claimed!";
+
+        }
+    </script>
+
+</body>
+
+</html>
