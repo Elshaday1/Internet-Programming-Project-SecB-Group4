@@ -16,7 +16,8 @@ let olFetch = document.getElementById("ol");
 input.appendChild(orderdList)
 let innerList = document.createElement('li');
 
-// Printing the question
+// Printing the question to be displayed
+
 function printQuestion() {
 
     //Creating the List
