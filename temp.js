@@ -128,6 +128,7 @@ function displaySurvey() {
   } else {
     let surveys = (JSON.parse(surveyJSON));
     survey = surveys[surveys.length-1];
+    localStorage.clear();
   }
 
   //   var questionsRetrieved = JSON.parse(surveyJSON);
