@@ -33,12 +33,17 @@
             </center>
             <p>Enter your email and we will send you a verification <br>code which will help you to reset your account.</p>
             <form action=".html"> <br> &emsp;
-                <lable> Email</lable> <input type="email" required id="inputs">
+                <lable> Email</lable> <input type="email" required id="inputs" >
                 <br> <br> <br><input type="submit" value="Reset Account" id="signup">
                 <a href="sign up.html"> <input type="submit" value="Create a new account" id="signup">
 
 
             </form>
+                <script>
+                    var email = document.getElementById("inputs").value;
+                    window.open('mailto:email?subject=subject&body=body)
+                </script>
+                
         </div>
 
         <div id="footer">
